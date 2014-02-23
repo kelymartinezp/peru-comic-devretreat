@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @capitulo.nombre %>
+</p>
+
+<p>
+  <strong>Numero de paginas:</strong>
+  <%= @capitulo.numero_de_paginas %>
+</p>
+
+<%= link_to 'Edit', edit_capitulo_path(@capitulo) %> |
+<%= link_to 'Back', capitulos_path %>

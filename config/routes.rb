@@ -1,4 +1,6 @@
 PeruComicDevretreat::Application.routes.draw do
+  resources :capitulos
+
   resources :comics
 
   # The priority is based upon order of creation: first created -> highest priority.

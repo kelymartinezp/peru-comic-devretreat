@@ -1,0 +1,29 @@
+<h1>Listing capitulos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Numero de paginas</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @capitulos.each do |capitulo| %>
+      <tr>
+        <td><%= capitulo.nombre %></td>
+        <td><%= capitulo.numero_de_paginas %></td>
+        <td><%= link_to 'Show', capitulo %></td>
+        <td><%= link_to 'Edit', edit_capitulo_path(capitulo) %></td>
+        <td><%= link_to 'Destroy', capitulo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Capitulo', new_capitulo_path %>
