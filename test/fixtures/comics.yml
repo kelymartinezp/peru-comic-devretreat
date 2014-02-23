@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Nombre: MyString
+  Idioma: MyString
+  Editorial: MyString
+  Autor: MyString
+  Fecha_de_lanzamiento: 2014-02-23
+  Portada: MyString
+
+two:
+  Nombre: MyString
+  Idioma: MyString
+  Editorial: MyString
+  Autor: MyString
+  Fecha_de_lanzamiento: 2014-02-23
+  Portada: MyString

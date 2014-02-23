@@ -1,0 +1,37 @@
+<h1>Listing comics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Idioma</th>
+      <th>Editorial</th>
+      <th>Autor</th>
+      <th>Fecha de lanzamiento</th>
+      <th>Portada</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comics.each do |comic| %>
+      <tr>
+        <td><%= comic.Nombre %></td>
+        <td><%= comic.Idioma %></td>
+        <td><%= comic.Editorial %></td>
+        <td><%= comic.Autor %></td>
+        <td><%= comic.Fecha_de_lanzamiento %></td>
+        <td><%= image_tag comic.Portada %></td>
+        <td><%= link_to 'Show', comic %></td>
+        <td><%= link_to 'Edit', edit_comic_path(comic) %></td>
+        <td><%= link_to 'Destroy', comic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Comic', new_comic_path %>

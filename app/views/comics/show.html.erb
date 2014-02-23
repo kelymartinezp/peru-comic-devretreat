@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @comic.Nombre %>
+</p>
+
+<p>
+  <strong>Idioma:</strong>
+  <%= @comic.Idioma %>
+</p>
+
+<p>
+  <strong>Editorial:</strong>
+  <%= @comic.Editorial %>
+</p>
+
+<p>
+  <strong>Autor:</strong>
+  <%= @comic.Autor %>
+</p>
+
+<p>
+  <strong>Fecha de lanzamiento:</strong>
+  <%= @comic.Fecha_de_lanzamiento %>
+</p>
+
+<p>
+  <strong>Portada:</strong>
+  <%= @comic.Portada %>
+</p>
+
+<%= link_to 'Edit', edit_comic_path(@comic) %> |
+<%= link_to 'Back', comics_path %>
